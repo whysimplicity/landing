@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+  <title>YTech Work - Conectando Talentos a Projetos Inovadores</title>
+  <style>
+    :root {
+      --primary-color: #3a86ff;
+      --secondary-color: #8338ec;
+      --accent-color: #ff006e;
+      --background-color: #f8f9fa;
+      --text-color: #333;
+      --footer-bg-color: #2c3e50;
+      --footer-text-color: #ecf0f1;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 40px;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      opacity: 0.9;
+    }
+
+    main {
+      padding: 60px 0;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .feature {
+      flex-basis: calc(50% - 20px);
+      background: white;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature h3 {
+      color: var(--secondary-color);
+      margin-top: 0;
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: var(--primary-color);
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: var(--accent-color);
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      background-color: var(--accent-color);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: var(--footer-bg-color);
+      color: var(--footer-text-color);
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .feature {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!-- add image centered -->
+
+      <img src="ylogo.png" alt="YTech Work Logo" style="display: block; margin: 0 auto;" width="400">
+
+      <h1>Why Tech Work</h1>
+      <p class="tagline">Conectando Talentos Tecnológicos a Projetos Inovadores</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Nossa Proposta</h2>
+      <p>Somos uma plataforma revolucionária que une engenheiros de software altamente qualificados a projetos
+        inovadores em diversas áreas.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">👥</div>
+          <h3>Rede de Especialistas</h3>
+          <p>Acesso a uma rede diversificada de engenheiros experientes, incluindo ex-CTOs e líderes de tecnologia de
+            renome.</p>
+          <ul>
+            <li>Profissionais com experiência em startups e grandes empresas</li>
+            <li>Especialistas em diversas áreas tecnológicas</li>
+            <li>Mentoria personalizada para projetos</li>
+          </ul>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔍</div>
+          <h3>Matchmaking Inteligente</h3>
+          <p>Conexão perfeita entre talentos e projetos, utilizando algoritmos avançados de inteligência artificial.</p>
+          <ul>
+            <li>Análise de habilidades técnicas e soft skills</li>
+            <li>Consideração de preferências de projeto e cultura</li>
+            <li>Sugestões personalizadas de oportunidades</li>
+          </ul>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🚀</div>
+          <h3>Programa de Incubação</h3>
+          <p>Suporte estruturado para transformar ideias inovadoras em produtos viáveis no mercado.</p>
+          <ul>
+            <li>Mentoria técnica e de negócios</li>
+            <li>Acesso a recursos de infraestrutura e ferramentas</li>
+            <li>Networking com investidores e parceiros estratégicos</li>
+          </ul>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎓</div>
+          <h3>Academia de Engenharia</h3>
+          <p>Desenvolvimento contínuo de habilidades técnicas e soft skills para profissionais de tecnologia.</p>
+          <ul>
+            <li>Cursos atualizados em tecnologias emergentes</li>
+            <li>Workshops de liderança e gestão de projetos</li>
+            <li>Certificações reconhecidas pela indústria</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Para quem é o ytech.work?</h2>
+      <ul>
+        <li>Engenheiros de software em busca de projetos desafiadores e oportunidades de crescimento</li>
+        <li>Empreendedores com ideias inovadoras precisando de expertise técnica para concretizá-las</li>
+        <li>Empresas buscando talentos especializados para projetos de transformação digital</li>
+        <li>Investidores interessados em conectar-se com startups de tecnologia promissoras</li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Pronto para fazer parte dessa revolução tecnológica?</h2>
+      <p>Seja você um engenheiro talentoso, um visionário com uma ideia inovadora ou uma empresa em busca de
+        transformação, queremos ouvir você!</p>
+      <a href="https://forms.gle/your-google-form-link" class="cta-button">Registre seu Interesse</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 ytech.work - Todos os direitos reservados.</p>
+      <p>Transformando ideias em inovações tecnológicas</p>
+    </div>
+  </footer>
+</body>
+
+</html>
