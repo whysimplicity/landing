@@ -57,10 +57,35 @@
       padding: 0 20px;
     }
 
+    .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      z-index: -1;
+    }
+
+    .hero-image::before {
+      content: '';
+      background-image: url('landscape.webp');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
     header {
-      padding: 80px 0;
+      padding-top: 300px;
       background-color: var(--background-color);
       text-align: center;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-text {
@@ -69,7 +94,7 @@
     }
 
     .hero-text h1 {
-      font-family: "Nunito", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
       margin-bottom: 20px;
       font-weight: 700;
@@ -229,7 +254,7 @@
     .audience {
       padding: 80px 20px;
       text-align: center;
-      background-color: var(--background-color);
+      background-color: var(--section-background);
     }
 
     .audience h2 {
@@ -300,6 +325,54 @@
       background-color: #c0392b;
     }
 
+    .projects-section {
+      padding: 80px 0;
+      background-color: var(--background-color);
+    }
+
+    .projects-section .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .projects-section h2 {
+      color: var(--primary-color);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .project h3 {
+      font-family: 'Poppins', sans-serif;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .project p {
+      color: var(--muted-text-color);
+      font-size: 1rem;
+      margin: 0;
+    }
+
     footer {
       background-color: var(--section-background);
       color: var(--muted-text-color);
@@ -326,6 +399,10 @@
       .steps-image img {
         max-width: 500px;
       }
+
+      .projects {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     @media (min-width: 992px) {
@@ -339,12 +416,15 @@
 
 <body>
   <header>
+    <div class="hero-image"></div>
     <div class="container hero-text">
       <h1>Ytech Work</h1>
       <p>Somos especialistas em Ruby on Rails. Treinamento, mentoria e otimização de aplicações para sua equipe de desenvolvimento.</p>
-      <a href="#contact" class="cta-button-outline">Solicite Uma Consultoria</a>
+      <a href="https://calendly.com/wedson-sousa-lima/30min" class="cta-button-outline">Solicite Uma Consultoria</a>
     </div>
   </header>
+
+  <section class="landscape-section"></section>
 
   <section class="how-it-works">
     <div class="container">
@@ -404,7 +484,27 @@
         <div class="feature">
           <i data-feather="trending-up"></i>
           <h3>Migração e Atualizações</h3>
-          <p>Apoiamos na migração de infraestrutura (Heroku, AWS) e nas atualizações de versões do Rails.</p>
+          <p>Apoiamos na migração de infraestrutura (Kamal, Heroku, AWS) e nas atualizações de versões do Rails.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <div class="container">
+      <h2>O que Já Construímos</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Fbonline</h3>
+          <p>Desenvolvemos uma plataforma de educação.</p>
+        </div>
+        <div class="project">
+          <h3>TechDojo</h3>
+          <p>Colaboramos com o TechDojo para criar uma plataforma de aprendizado online, facilitando o ensino de programação com integração a diversas ferramentas de colaboração.</p>
+        </div>
+        <div class="project">
+          <h3>Yubb</h3>
+          <p>Trabalhamos com a Yubb para otimizar a performance e escalabilidade de sua aplicação financeira, garantindo uma experiência ágil e segura para seus usuários.</p>
         </div>
       </div>
     </div>
@@ -424,7 +524,7 @@
   <section class="cta-section" id="contact">
     <h2>Pronto Para Otimizar Sua Equipe e Aplicação?</h2>
     <p>Entre em contato com nossos especialistas e descubra como podemos ajudar sua empresa a crescer e escalar com Ruby on Rails.</p>
-    <a href="mailto:contato@consultoria-rails.com" class="cta-button">Fale Conosco</a>
+    <a href="https://calendly.com/wedson-sousa-lima/30min" class="cta-button">Fale Conosco</a>
   </section>
 
   <footer>
