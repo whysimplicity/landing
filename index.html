@@ -359,6 +359,21 @@
       text-align: center;
     }
 
+    .project-logo {
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .project-logo img {
+      filter: grayscale(100%);
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
     .project h3 {
       font-family: 'Poppins', sans-serif;
       color: var(--primary-color);
@@ -492,19 +507,29 @@
 
   <section class="projects-section">
     <div class="container">
-      <h2>O que Já Construímos</h2>
+      <h2>O Que Já Ajudamos A Construir</h2>
       <div class="projects">
         <div class="project">
-          <h3>Fbonline</h3>
-          <p>Desenvolvemos uma plataforma de educação.</p>
+          <div class="project-logo">
+            <img src="fbonline.png" alt="FB Online Logo">
+          </div>
+          <h3>FB Online</h3>
+          <p>Uma plataforma educacional de cursos online para ENEM, Medicina, ITA e IME.</p>
         </div>
         <div class="project">
-          <h3>TechDojo</h3>
-          <p>Colaboramos com o TechDojo para criar uma plataforma de aprendizado online, facilitando o ensino de programação com integração a diversas ferramentas de colaboração.</p>
-        </div>
-        <div class="project">
+          <div class="project-logo">
+            <img src="yubb.png" alt="Yubb Logo">
+          </div>
           <h3>Yubb</h3>
-          <p>Trabalhamos com a Yubb para otimizar a performance e escalabilidade de sua aplicação financeira, garantindo uma experiência ágil e segura para seus usuários.</p>
+          <p>O Yubb é um buscador de investimentos totalmente gratuito, transparente e imparcial para você encontrar os melhores
+            investimentos do Brasil.</p>
+        </div>
+        <div class="project">
+          <div class="project-logo">
+            <img src="techdojo.png" alt="TechDojo Logo" style="height: 90px; width: auto;">
+          </div>
+          <h3>TechDojo</h3>
+          <p>Uma plataforma educacional gamificada para ensino de programação web com diversas ferramentas de colaboração.</p>
         </div>
       </div>
     </div>
