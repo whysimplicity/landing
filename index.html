@@ -36,899 +36,825 @@
   </script>
 
   <style>
-    :root {
-      --primary-color: #000000;
-      --secondary-color: #555555;
-      --accent-color: #E21E1E;
-      --background-color: #ffffff;
-      --section-background: #F8F8F8;
-      --text-color: #333333;
-      --third-color: #9B9B9B;
-      --border-color: #e0e0e0;
-    }
+   :root {
+  --primary-color: #000000;
+  --secondary-color: #555555;
+  --accent-color: #E21E1E;
+  --background-color: #ffffff;
+  --section-background: #F8F8F8;
+  --text-color: #333333;
+  --third-color: #9B9B9B;
+  --border-color: #e0e0e0;
+}
 
-    body {
-      font-family: 'Poppins', Arial, sans-serif;
-      color: var(--text-color);
-      background-color: var(--background-color);
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+/* Fontes e espaçamento padrão para desktop */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 16px; /* Tamanho de fonte base */
+}
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 
-  .brand-section {
-    background-color: var(--background-color);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 0;
+p {
+  font-size: 1rem; /* Tamanho de parágrafo */
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
   }
 
-  .centered-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+/* Ajustes para layout maior (desktop) */
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2.4rem; /* Aumentando o tamanho do título em telas maiores */
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7; /* Melhor espaçamento de linhas */
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brand-section {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  max-width: 500px;
+  height: auto;
+}
+
+.brand-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.cta-button-outline {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.cta-button-outline:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
   .logo {
-    max-width: 500px;
-    height: auto;
+    max-width: 1000px;
   }
+}
 
-  .brand-section p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    font-weight: 400;
-    color: var(--primary-color);
-  }
+.our-services {
+  padding: 80px 0;
+  background-color: var(--section-background);
+}
 
-  .cta-button-outline {
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-  }
+.our-services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .cta-button-outline:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-  }
+.our-services h2 {
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
 
-  @media (min-width: 768px) {
-    .logo {
-      max-width: 1000px;
-    }
-  }
+.our-services .steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: center;
+}
 
-  .cta-button-outline {
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-  }
+.our-services .step {
+  padding: 30px;
+  text-align: center;
+}
 
-  .cta-button-outline:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-  }
+.our-services .step svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  stroke: var(--accent-color);
+}
 
-  .cta-button-outline {
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-  }
+.our-services .step h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
-  .cta-button-outline:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-  }
+.our-services .step p {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
 
-  .our-services {
-    padding: 80px 0;
-    background-color: var(--background-color);
-  }
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+}
 
-  .our-services .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
 
-  .our-services h2 {
-    color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    font-weight: 700;
-    text-align: center;
-  }
+.step svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+  stroke: var(--accent-color);
+}
 
-  .our-services .steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
+.step h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
-  .our-services .step {
-    padding: 30px;
-    text-align: center;
-  }
+.step p {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+}
 
-  .our-services .step svg {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
-    stroke: var(--accent-color);
-  }
+.features-section {
+  padding: 80px 0;
+  background-color: var(--section-background);
+}
 
-  .our-services .step h3 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
+.features-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-  .our-services .step p {
-    color: var(--primary-color);
-    font-size: 1rem;
-  }
+.features-section h2 {
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
 
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: center;
+}
+
+.feature {
+  padding: 30px;
+  text-align: center;
+}
+
+.feature svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  stroke: var(--accent-color);
+}
+
+.feature h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.feature p {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.features-image {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.features-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+.steps-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.steps-image img {
+  max-width: 200px;
+  height: auto;
+}
+
+.projects-section {
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+
+.projects-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.project-logo {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-logo img {
+  filter: grayscale(100%);
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.project h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.project p {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer {
+  background-color: var(--section-background);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (min-width: 768px) {
   .steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .step svg {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 15px;
-    stroke: var(--accent-color);
-  }
-
-  .step h3 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  .step p {
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  .features-section {
-    padding: 80px 0;
-    background-color: var(--section-background);
-  }
-
-  .features-section .container {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .features-section h2 {
-    color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 60px;
-    font-weight: 700;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .features {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .feature {
-    padding: 30px;
-    text-align: center;
+  .our-services .steps {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .feature svg {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
-    stroke: var(--accent-color);
-  }
-
-  .feature h3 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  .feature p {
-    color: var(--primary-color);
-    font-size: 1rem;
-  }
-
-  .features-image {
-    margin-top: 40px;
-    text-align: center;
-  }
-
-  .features-image img {
-    max-width: 300px;
-    height: auto;
-  }
-
-  .steps-image {
-    margin-top: 20px;
-    text-align: center;
-  }
-
+  .features-image img,
   .steps-image img {
-    max-width: 200px;
-    height: auto;
-  }
-
-  .projects-section {
-    padding: 80px 0;
-    background-color: var(--background-color);
-  }
-
-  .projects-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .projects-section h2 {
-    color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    font-weight: 700;
-    text-align: center;
+    max-width: 500px;
   }
 
   .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .features-image img,
+  .steps-image img {
+    max-width: 600px;
   }
 
-  .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
+  .our-services .steps {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .project-logo {
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+footer {
+  background-color: var(--third-color);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
 
-  .project-logo img {
-    filter: grayscale(100%);
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+footer p {
+  margin: 5px 0;
+}
 
-  .project h3 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
+.footer-links {
+  margin-top: 15px;
+}
 
-  .project p {
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin: 0;
-  }
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
 
-  footer {
-    background-color: var(--section-background);
-    color: var(--primary-color);
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border-color);
-  }
+.footer-links a:hover {
+  text-decoration: underline;
+}
 
-  footer p {
-    margin: 5px 0;
-  }
+.consultants-section {
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
 
-  @media (min-width: 768px) {
-    .steps {
-      grid-template-columns: repeat(4, 1fr);
-    }
+.consultants-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .features {
-      grid-template-columns: repeat(3, 1fr);
-    }
+.consultants-section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
 
-    .our-services .steps {
-      grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
-    }
+.consultants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+}
 
-    .features-image img,
-    .steps-image img {
-      max-width: 500px;
-    }
+.consultant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
 
-    .projects {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+.consultant-photo {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  @media (min-width: 992px) {
-    .features-image img,
-    .steps-image img {
-      max-width: 600px;
-    }
+.consultant-photo img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
 
-    .our-services .steps {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+.consultant h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
-  footer {
-    background-color: var(--third-color);
-    color: #fff;;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border-color);
-  }
+.consultant p {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+}
 
-  footer p {
-    margin: 5px 0;
-  }
-
-  .footer-links {
-    margin-top: 15px;
-  }
-
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: 600;
-  }
-
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-
-  .consultants-section {
-    padding: 80px 0;
-    background-color: var(--background-color);
-  }
-
-  .consultants-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .consultants-section h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 40px;
-    font-weight: 700;
-    text-align: center;
-  }
-
+@media (min-width: 768px) {
   .consultants {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .consultant {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
-  }
+.about-section {
+  padding: 80px 20px;
+  background-color: var(--background-color);
+  text-align: center;
+}
 
-  .consultant-photo {
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
 
-  .consultant-photo img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-  }
+.about-highlight {
+  font-size: 1.2rem;
+  line-height: 2.5;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
 
-  .consultant h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
+.about-highlight strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
 
-  .consultant p {
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin: 0;
-  }
+.highlight-term {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
-  @media (min-width: 768px) {
-    .consultants {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+.highlight-methodology {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 3px 6px;
+  border-radius: 6px;
+}
 
-  .about-section {
-    padding: 80px 20px;
-    background-color: var(--background-color);
-    text-align: center;
-  }
+.about-highlight p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
 
-  .about-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 40px;
-  }
+.blockquote-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
 
-  .about-highlight {
-    font-size: 1.2rem;
-    line-height: 2.5;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    color: var(--text-color);
-    letter-spacing: 0.5px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
-  }
+.blockquote {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  line-height: 2.0;
+  max-width: 800px;
+}
 
-  .about-highlight strong {
-    color: var(--primary-color);
-    font-weight: 700;
-  }
+.blockquote:before,
+.blockquote:after {
+  content: '"';
+  font-size: 3rem;
+  color: var(--accent-color);
+  position: absolute;
+}
 
-  .highlight-term {
-    color: var(--accent-color);
-    font-weight: 700;
-    font-size: 1.4rem;
-    background-color: rgba(255, 0, 0, 0.1);
-    padding: 5px 10px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
+.blockquote:before {
+  left: -20px;
+  top: -20px;
+}
 
-  .highlight-methodology {
-    font-style: normal;
-    font-weight: 700;
-    color: var(--primary-color);
-    background-color: rgba(255, 0, 0, 0.1);
-    padding: 3px 6px;
-    border-radius: 6px;
-  }
+.blockquote:after {
+  right: -20px;
+  bottom: -20px;
+}
 
-  .about-highlight p {
-    margin-bottom: 30px;
-  }
+.blockquote p {
+  margin: 0;
+  text-align: justify;
+}
 
-  .blockquote-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-  }
+.blockquote strong {
+  color: var(--accent-color);
+}
 
+@media (max-width: 768px) {
   .blockquote {
-    font-size: 2rem;
-    color: var(--primary-color);
-    text-align: center;
-    font-weight: bold;
-    margin: 0;
-    position: relative;
-    line-height: 2.0;
-    max-width: 800px;
+    font-size: 1.4rem;
+    line-height: 1.8;
   }
 
   .blockquote:before,
   .blockquote:after {
-    content: '"';
-    font-size: 3rem;
-    color: var(--accent-color);
-    position: absolute;
-  }
-
-  .blockquote:before {
-    left: -20px;
-    top: -20px;
-  }
-
-  .blockquote:after {
-    right: -20px;
-    bottom: -20px;
-  }
-
-  .blockquote p {
-    margin: 0;
-    text-align: justify;
-  }
-
-  .blockquote strong {
-    color: var(--accent-color);
-  }
-
-  @media (max-width: 768px) {
-    .blockquote {
-      font-size: 1.4rem;
-      line-height: 1.8;
-    }
-
-    .blockquote:before,
-    .blockquote:after {
-      font-size: 2rem;
-    }
-  }
-
-  .about-section {
-    padding: 80px 0;
-    background-color: var(--background-color);
-  }
-
-  .about-title {
-    color: var(--primary-color);
     font-size: 2rem;
-    margin-bottom: 40px;
-    font-weight: 700;
-    text-align: center;
   }
+}
 
-  .about-text {
-    color: var(--text-color);
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+.values-section {
+  padding: 80px 0;
+  background-color: var(--section-background);
+}
 
-  .about-text strong {
-    color: var(--accent-color);
-    font-weight: 700;
-  }
+.values-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .about-text em {
-    font-style: italic;
-    color: var(--secondary-color);
-  }
+.values-section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-align: center;
+}
 
-  @media (min-width: 768px) {
-    .about-text {
-      font-size: 1.4rem;
-    }
-  }
+.values-section .features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: center;
+}
 
-  .values-section {
-    padding: 80px 0;
-    background-color: var(--section-background);
-  }
+.values-section .feature {
+  padding: 30px;
+  text-align: center;
+}
 
-  .values-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.values-section .feature svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  stroke: var(--accent-color);
+}
 
-  .values-section h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 60px;
-    font-weight: 700;
-    text-align: center;
-  }
+.values-section .feature h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
+.values-section .feature p {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
   .values-section .features {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .values-section .feature {
-    padding: 30px;
-    text-align: center;
+@media (min-width: 992px) {
+  .values-section .features {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
 
-  .values-section .feature svg {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
-    stroke: var(--accent-color);
-  }
+.mission-section {
+  padding: 80px 20px;
+  background-color: var(--background-color);
+  text-align: center;
+}
 
-  .values-section .feature h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
+.mission-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
 
-  .values-section .feature p {
-    color: var(--primary-color);
-    font-size: 1rem;
-  }
+.mission-subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
 
-  @media (min-width: 768px) {
-    .values-section .features {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+.values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
 
-  @media (min-width: 992px) {
-    .values-section .features {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
+.value {
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
 
-  .mission-section {
-    padding: 80px 20px;
-    background-color: var(--background-color);
-    text-align: center;
-  }
+.value i {
+  width: 48px;
+  height: 48px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  stroke-width: 2px;
+}
 
-  .mission-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
+.value h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
 
-  .mission-subtitle {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-    margin-bottom: 40px;
-  }
+.value p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
 
+.mission-differential {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
   .values {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .values {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.outcome {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.outcome p {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.outcome strong {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* Seção de CTA com cor preta */
+.cta-section {
+  background-color: var(--primary-color); /* Cor preta */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #fff; /* Fundo branco */
+  color: var(--primary-color); /* Texto preto */
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color); /* Cor de destaque ao passar o mouse */
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 1.6rem;
   }
 
-  .value {
-    padding: 20px;
-    background-color: var(--background-color);
-    border-radius: 8px;
-  }
-
-  .value i {
-    width: 48px;
-    height: 48px;
-    color: var(--accent-color);
-    margin-bottom: 15px;
-    stroke-width: 2px;
-  }
-
-  .value h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-  }
-
-  .value p {
+  .cta-button {
     font-size: 1rem;
-    color: var(--text-color);
+    padding: 12px 24px;
   }
+}
 
-  .mission-differential {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    margin-top: 40px;
-  }
-
-  @media (min-width: 768px) {
-    .values {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 992px) {
-    .values {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
   </style>
 </head>
 
 <body>
-  <section class="brand-section">
-    <div class="container centered-section">
-      <img src="ysimplicity_original.png" alt="ysimplicity logo" class="logo">
-      <p>ysimplicity is a consultancy that understands and meets business objectives.</p>
-      <a href="https://calendly.com/contato-ytech/30min" class="cta-button-outline">Talk to an Expert</a>
+
+<section class="brand-section">
+  <div class="container centered-section">
+    <img src="ysimplicity_original.png" alt="ysimplicity logo" class="logo">
+    <p>ysimplicity helps transform your tech team into a strategic asset, delivering fast, impactful results.</p>
+    <a href="https://calendly.com/contato-ytech/30min" class="cta-button-outline">Talk to an Expert</a>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <h2 class="about-title">Is this your problem?</h2>
+
+    <div class="about-highlight">
+      <p>
+        Is your tech team failing to deliver fast results? Is there a lack of clarity in how to mentor and grow junior and mid-level developers into more advanced roles? Is your codebase becoming harder to maintain as your team grows?
+      </p>
+      <p>
+        Is the time it takes to resolve bugs acceptable, or is it slowing down your development process and impacting business outcomes?
+      </p>
+      <p>
+        If any of this resonates, your business could be facing inefficiencies that are holding you back from growth. We can help.
+      </p>
     </div>
-  </section>
-
-  <section class="about-section">
-    <div class="container">
-      <h2 class="about-title">About Us</h2>
-
-      <div class="about-highlight">
-        <p>
-          <span class="highlight-term"><strong>ysimplicity</strong></span> combines hands-on technical management experience with a pragmatic, results-focused approach.
-        </p>
-        <span>
-          We use methodologies such as <Shape class="highlight-methodology">Shape Up</span> and <span class="highlight-methodology">Getting Real</span>, which ensure fast, efficient deliveries with a focus on what truly matters.
-        </p>
-      </div>
-
-      <div class="blockquote-container">
-        <blockquote class="blockquote">
-          <p>Progress is good.</p>
-          <p>Complexity is a bridge.</p>
-          <p><strong>Simplicity</strong> is the destination.</p>
-        </blockquote>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class="values-section">
-      <div class="container">
-        <h2>Our Values</h2>
-        <div class="features">
-          <div class="feature">
-            <i data-feather="target"></i>
-            <h3>Pragmatism</h3>
-            <p>We seek practical and effective solutions for our clients' challenges.</p>
-          </div>
-          <div class="feature">
-            <i data-feather="heart"></i>
-            <h3>Passion</h3>
-            <p>We love what we do and inspire others to find their passion.</p>
-          </div>
-          <div class="feature">
-            <i data-feather="trending-up"></i>
-            <h3>Continuous Learning</h3>
-            <p>We value constant growth and continuous improvement.</p>
-          </div>
-          <div class="feature">
-            <i data-feather="zap"></i>
-            <h3>Simplicity</h3>
-            <p>We believe that the best solutions are often the simplest.</p>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="our-services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="steps">
-        <div class="step">
-          <i data-feather="layers"></i>
-          <div>
-            <h3>Team Reality Analysis</h3>
-            <p>Comprehensive assessment of team structure, processes, and dynamics, identifying bottlenecks and improvement opportunities.</p>
-          </div>
-        </div>
-        <div class="step">
-          <i data-feather="award"></i>
-          <div>
-            <h3>Specialized Training</h3>
-            <p>We offer technical leadership development programs and workshops on agile methodologies and modern development practices.</p>
-          </div>
-        </div>
-        <div class="step">
-          <i data-feather="users"></i>
-          <div>
-            <h3>Professional Allocation</h3>
-            <p>We strategically place specialists to elevate your team's technical level, including on-site mentoring for knowledge transfer.</p>
-          </div>
-        </div>
-        <div class="step">
-          <i data-feather="settings"></i>
-          <div>
-            <h3>Technology and Process Consulting</h3>
-            <p>Optimization of architectures, implementation of DevOps and Continuous Delivery practices, along with defining technical roadmaps aligned with business objectives.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="features-section">
-    <div class="container">
-      <h2>How We Work</h2>
-      <div class="features">
-        <div class="feature">
-          <i data-feather="clock"></i>
-          <h3>6-Week Cycles</h3>
-          <p>We work in intensive 6-week cycles, followed by 2 weeks of reflection and planning, ensuring focus and clear deliverables.</p>
-        </div>
-        <div class="feature">
-          <i data-feather="target"></i>
-          <h3>Clear Scope Definition</h3>
-          <p>Before each cycle, we clearly define the scope and objectives to ensure that goals are met without deviation.</p>
-        </div>
-        <div class="feature">
-          <i data-feather="activity"></i>
-          <h3>Diagnosis and Action Plan</h3>
-          <p>We perform an initial diagnosis to understand your needs and create a tailored action plan for your company.</p>
-        </div>
-        <div class="feature">
-          <i data-feather="trending-up"></i>
-          <h3>Evaluation and Adjustments</h3>
-          <p>We constantly evaluate results at the end of each cycle, making adjustments as needed to ensure the success of the project.</p>
-        </div>
-        <div class="feature">
-          <i data-feather="share-2"></i>
-          <h3>Knowledge Transfer</h3>
-          <p>Our goal is to empower your team to become autonomous, ensuring that knowledge is effectively transferred.</p>
-        </div>
-        <div class="feature">
-          <i data-feather="sliders"></i>
-          <h3>Personalized Approach</h3>
-          <p>We adapt our methodology to each client’s specific needs, taking into account your company's culture and technical maturity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <section class="consultants-section">
     <div class="container">
-      <h2>Our Team</h2>
+      <h2>Who We Are</h2>
       <div class="consultants">
         <div class="consultant">
           <div class="consultant-photo">
@@ -969,6 +895,43 @@
     </div>
   </section>
 
+  <section class="our-services">
+      <div class="container">
+          <h2>How We Help</h2>
+          <div class="steps">
+              <div class="step">
+                  <i data-feather="search"></i> <!-- Alterado o ícone para "search" -->
+                  <div>
+                      <h3>Team & Process Analysis</h3>
+                      <p>We’ll conduct a thorough analysis of your team and processes to identify the core issues.</p>
+                  </div>
+              </div>
+              <div class="step">
+                  <i data-feather="layout"></i> <!-- Alterado o ícone para "layout" -->
+                  <div>
+                      <h3>Tailored Strategy</h3>
+                      <p>We’ll implement a tailored strategy that fits your company’s unique culture and needs.</p>
+                  </div>
+              </div>
+              <div class="step">
+                  <i data-feather="trending-up"></i> <!-- Alterado o ícone para "trending-up" -->
+                  <div>
+                      <h3>Leadership & Team Coaching</h3>
+                      <p>Through ongoing coaching and hands-on leadership development, we’ll empower your team to work efficiently and in sync with your business goals.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="outcome">
+        <p>
+            <strong>Your tech team will transform into a strategic asset, delivering fast, impactful results.</strong>
+            You’ll experience smoother communication, faster project turnarounds, and technology that supports—rather than hinders—your business growth.
+            The frustration will turn into clarity and success.
+        </p>
+    </div>
+  </section>
+
   <section class="projects-section">
     <div class="container">
       <h2>Success Stories and Clients</h2>
@@ -995,6 +958,16 @@
           <p>A gamified educational platform for teaching web programming with various collaboration tools.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>
+        Let’s transform your tech team into a powerful strategic asset. Reach out to us and start seeing faster results and a smoother development process.
+      </p>
+      <a href="https://calendly.com/contato-ytech/30min" class="cta-button">Book a Free Consultation</a>
     </div>
   </section>
 
