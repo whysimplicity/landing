@@ -47,57 +47,52 @@
   --border-color: #e0e0e0;
 }
 
-/* Fontes e espaçamento padrão para desktop */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  font-size: 16px; /* Tamanho de fonte base */
+  line-height: 1.8;
+  font-size: 1.125rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-p {
-  font-size: 1rem; /* Tamanho de parágrafo */
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  h2 {
-    font-size: 1.6rem;
-  }
+    body {
+      font-size: 0.875rem;
+    }
 
-  p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
+    h2 {
+      font-size: 1.25rem;
+    }
 
-  .cta-button {
-    font-size: 1rem;
-    padding: 12px 24px;
-  }
-}
+    h3 {
+      font-size: 1rem;
+    }
 
-/* Ajustes para layout maior (desktop) */
-@media (min-width: 992px) {
-  h2 {
-    font-size: 2.4rem; /* Aumentando o tamanho do título em telas maiores */
-  }
+    p {
+      font-size: 0.875rem;
+    }
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.7; /* Melhor espaçamento de linhas */
+    .cta-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
   }
-}
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -118,27 +113,26 @@ p {
 }
 
 .logo {
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
-}
-
-.brand-section p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  font-weight: 400;
-  color: var(--primary-color);
 }
 
 .cta-button-outline {
   padding: 15px 30px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 1rem;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: transparent;
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .cta-button-outline {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }
 
 .cta-button-outline:hover {
@@ -165,7 +159,6 @@ p {
 .our-services h2 {
   color: var(--primary-color);
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
   margin-bottom: 40px;
   font-weight: 700;
   text-align: center;
@@ -191,16 +184,7 @@ p {
 }
 
 .our-services .step h3 {
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
   margin-bottom: 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.our-services .step p {
-  color: var(--primary-color);
-  font-size: 1rem;
 }
 
 .steps {
@@ -226,78 +210,7 @@ p {
 }
 
 .step h3 {
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
   margin-bottom: 10px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.step p {
-  color: var(--primary-color);
-  font-size: 1rem;
-  margin: 0;
-}
-
-.features-section {
-  padding: 80px 0;
-  background-color: var(--section-background);
-}
-
-.features-section .container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.features-section h2 {
-  color: var(--primary-color);
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 700;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  text-align: center;
-}
-
-.feature {
-  padding: 30px;
-  text-align: center;
-}
-
-.feature svg {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 20px;
-  stroke: var(--accent-color);
-}
-
-.feature h3 {
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.feature p {
-  color: var(--primary-color);
-  font-size: 1rem;
-}
-
-.features-image {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.features-image img {
-  max-width: 300px;
-  height: auto;
 }
 
 .steps-image {
@@ -322,8 +235,6 @@ p {
 
 .projects-section h2 {
   color: var(--primary-color);
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
   margin-bottom: 40px;
   font-weight: 700;
   text-align: center;
@@ -360,29 +271,7 @@ p {
 }
 
 .project h3 {
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
   margin-bottom: 10px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.project p {
-  color: var(--primary-color);
-  font-size: 1rem;
-  margin: 0;
-}
-
-footer {
-  background-color: var(--section-background);
-  color: var(--primary-color);
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 0.9rem;
-}
-
-footer p {
-  margin: 5px 0;
 }
 
 @media (min-width: 768px) {
@@ -390,15 +279,10 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .features {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .our-services .steps {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .features-image img,
   .steps-image img {
     max-width: 500px;
   }
@@ -409,7 +293,6 @@ footer p {
 }
 
 @media (min-width: 992px) {
-  .features-image img,
   .steps-image img {
     max-width: 600px;
   }
@@ -439,7 +322,8 @@ footer p {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .footer-links a:hover {
@@ -458,7 +342,6 @@ footer p {
 
 .consultants-section h2 {
   color: var(--primary-color);
-  font-size: 2rem;
   margin-bottom: 40px;
   font-weight: 700;
   text-align: center;
@@ -496,16 +379,7 @@ footer p {
 }
 
 .consultant h3 {
-  color: var(--primary-color);
   margin-bottom: 10px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.consultant p {
-  color: var(--primary-color);
-  font-size: 1rem;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -521,15 +395,13 @@ footer p {
 }
 
 .about-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 40px;
 }
 
 .about-highlight {
-  font-size: 1.2rem;
-  line-height: 2.5;
   text-align: left;
   max-width: 800px;
   margin: 0 auto;
@@ -544,216 +416,8 @@ footer p {
   font-weight: 700;
 }
 
-.highlight-term {
-  color: var(--accent-color);
-  font-weight: 700;
-  font-size: 1.4rem;
-  background-color: rgba(255, 0, 0, 0.1);
-  padding: 5px 10px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.highlight-methodology {
-  font-style: normal;
-  font-weight: 700;
-  color: var(--primary-color);
-  background-color: rgba(255, 0, 0, 0.1);
-  padding: 3px 6px;
-  border-radius: 6px;
-}
-
 .about-highlight p {
-  font-size: 1.2rem;
   margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.blockquote-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-.blockquote {
-  font-size: 2rem;
-  color: var(--primary-color);
-  text-align: center;
-  font-weight: bold;
-  margin: 0;
-  position: relative;
-  line-height: 2.0;
-  max-width: 800px;
-}
-
-.blockquote:before,
-.blockquote:after {
-  content: '"';
-  font-size: 3rem;
-  color: var(--accent-color);
-  position: absolute;
-}
-
-.blockquote:before {
-  left: -20px;
-  top: -20px;
-}
-
-.blockquote:after {
-  right: -20px;
-  bottom: -20px;
-}
-
-.blockquote p {
-  margin: 0;
-  text-align: justify;
-}
-
-.blockquote strong {
-  color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .blockquote {
-    font-size: 1.4rem;
-    line-height: 1.8;
-  }
-
-  .blockquote:before,
-  .blockquote:after {
-    font-size: 2rem;
-  }
-}
-
-.values-section {
-  padding: 80px 0;
-  background-color: var(--section-background);
-}
-
-.values-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.values-section h2 {
-  color: var(--primary-color);
-  font-size: 2rem;
-  margin-bottom: 60px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.values-section .features {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  text-align: center;
-}
-
-.values-section .feature {
-  padding: 30px;
-  text-align: center;
-}
-
-.values-section .feature svg {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 20px;
-  stroke: var(--accent-color);
-}
-
-.values-section .feature h3 {
-  color: var(--primary-color);
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.values-section .feature p {
-  color: var(--primary-color);
-  font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-  .values-section .features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .values-section .features {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.mission-section {
-  padding: 80px 20px;
-  background-color: var(--background-color);
-  text-align: center;
-}
-
-.mission-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.mission-subtitle {
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-  margin-bottom: 40px;
-}
-
-.values {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-}
-
-.value {
-  padding: 20px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-}
-
-.value i {
-  width: 48px;
-  height: 48px;
-  color: var(--accent-color);
-  margin-bottom: 15px;
-  stroke-width: 2px;
-}
-
-.value h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.value p {
-  font-size: 1rem;
-  color: var(--text-color);
-}
-
-.mission-differential {
-  font-size: 1.1rem;
-  color: var(--primary-color);
-  margin-top: 40px;
-}
-
-@media (min-width: 768px) {
-  .values {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .values {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .outcome {
@@ -763,62 +427,44 @@ footer p {
 }
 
 .outcome p {
-  font-size: 1.2rem;
-  color: var(--primary-color);
-  line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .outcome strong {
   color: var(--accent-color);
-  font-weight: 700;
 }
 
 .cta-section {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* Fundo preto ou neutro */
   color: #fff;
   text-align: center;
-  padding: 60px 20px;
+  padding: 120px 20px;
 }
 
 .cta-section h2 {
-  font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .cta-section p {
-  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
 .cta-button {
   padding: 15px 30px;
-  background-color: #fff; /* Fundo branco */
-  color: var(--primary-color); /* Texto preto */
+  background-color: var(--accent-color);
+  color: #fff;
   border-radius: 8px;
-  font-size: 1.2rem;
   text-decoration: none;
   font-weight: 700;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: var(--accent-color); /* Cor de destaque ao passar o mouse */
-  color: #fff;
+  background-color: #fff;
+  color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-  .cta-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .cta-button {
-    font-size: 1rem;
-    padding: 12px 24px;
-  }
-}
 
   </style>
 </head>
@@ -839,7 +485,13 @@ footer p {
 
     <div class="about-highlight">
       <p>
-        Is your tech team failing to deliver fast results? Is there a lack of clarity in how to mentor and grow junior and mid-level developers into more advanced roles? Is your codebase becoming harder to maintain as your team grows?
+        Is your tech team failing to deliver fast results?
+      </p>
+      <p>
+        Is there a lack of clarity in how to mentor and grow junior and mid-level developers into more advanced roles?
+      </p>
+      <p>
+        Is your codebase becoming harder to maintain as your team grows?
       </p>
       <p>
         Is the time it takes to resolve bugs acceptable, or is it slowing down your development process and impacting business outcomes?
@@ -888,7 +540,7 @@ footer p {
             <img src="ralf.jpg" alt="Diego Picture">
           </div>
           <h3>Diego Linhares</h3>
-          <p>Senior engineer in Ruby on Rails with 6 years of experience in web development. Passionate about software architecture and engineering, he has worked in the fintech, ESG, food service, and bioinformatics sectors</p>
+          <p>Ruby on Rails developer with 6 years of experience. Passionate about software architecture and engineering.</p>
         </div>
       </div>
     </div>
@@ -933,7 +585,7 @@ footer p {
 
   <section class="projects-section">
     <div class="container">
-      <h2>Success Stories and Clients</h2>
+      <h2>Trusted By</h2>
       <div class="projects">
         <div class="project">
           <div class="project-logo">
@@ -962,9 +614,9 @@ footer p {
 
   <section class="cta-section">
     <div class="container">
-      <h2>Ready to Take the Next Step?</h2>
+      <h2>Let's Accelerate Your Growth</h2>
       <p>
-        Let’s transform your tech team into a powerful strategic asset. Reach out to us and start seeing faster results and a smoother development process.
+        Reach out to us and start seeing faster results and a smoother development process.
       </p>
       <a href="https://calendly.com/contato-ytech/30min" class="cta-button">Book a Free Consultation</a>
     </div>
