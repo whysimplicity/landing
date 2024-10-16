@@ -1,642 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>whysimplicity. | because growth can be simple.</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whysimplicity. | because growth can be simple.</title>
 
-  <meta property="og:title" content="whysimplicity. | because growth can be simple.">
-  <meta property="og:description" content="Specialized Ruby on Rails consultancy. Training, mentoring, and performance optimization for companies using Rails.">
-  <meta property="og:image" content="https://whysimplicity.com/logo.png">
-  <meta property="og:url" content="https://whysimplicity.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="whysimplicity">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="whysimplicity. | because growth can be simple.">
+    <meta property="og:description" content="Specialized Ruby on Rails consultancy. Training, mentoring, and performance optimization for companies using Rails.">
+    <meta property="og:image" content="https://whysimplicity.com/logo.png">
+    <meta property="og:url" content="https://whysimplicity.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="whysimplicity">
+    <meta property="og:locale" content="en_US">
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFYB9KYJN4"></script>
-  <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFYB9KYJN4"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-ZFYB9KYJN4');
-  </script>
-
-  <style>
-:root {
-  --primary-color: #000000;
-  --secondary-color: #555555;
-  --accent-color: #E21E1E;
-  --background-color: #ffffff;
-  --section-background: #F8F8F8;
-  --text-color: #333333;
-  --third-color: #9B9B9B;
-  --border-color: #e0e0e0;
-}
-
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-  font-size: 1.125rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-@media (max-width: 768px) {
-    body {
-      font-size: 0.875rem;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.875rem;
-    }
-
-    .cta-button {
-      font-size: 1rem;
-      padding: 12px 24px;
-    }
-  }
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.brand-section {
-  background-color: var(--background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.centered-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  max-width: 100%;
-  height: auto;
-}
-
-.cta-button-outline {
-  padding: 15px 30px;
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: transparent;
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .cta-button-outline {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-}
-
-.cta-button-outline:hover {
-  background-color: var(--accent-color);
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .logo {
-    max-width: 1000px;
-  }
-}
-
-.our-services {
-  padding: 80px 0;
-  background-color: var(--section-background);
-}
-
-.our-services .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.our-services h2 {
-  color: var(--primary-color);
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 40px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.our-services .steps {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  text-align: center;
-}
-
-.our-services .step {
-  padding: 30px;
-  text-align: center;
-}
-
-.our-services .step svg {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 20px;
-  stroke: var(--accent-color);
-}
-
-.our-services .step h3 {
-  margin-bottom: 15px;
-}
-
-.steps {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  text-align: center;
-}
-
-.step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  text-align: center;
-}
-
-.step svg {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 15px;
-  stroke: var(--accent-color);
-}
-
-.step h3 {
-  margin-bottom: 10px;
-}
-
-.steps-image {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.steps-image img {
-  max-width: 200px;
-  height: auto;
-}
-
-.projects-section {
-  padding: 80px 0;
-  background-color: var(--background-color);
-}
-
-.projects-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.projects-section h2 {
-  color: var(--primary-color);
-  margin-bottom: 40px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  text-align: center;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  text-align: center;
-}
-
-.project-logo {
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-logo img {
-  filter: grayscale(100%);
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.project h3 {
-  margin-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-  .steps {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .our-services .steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .steps-image img {
-    max-width: 500px;
-  }
-
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .steps-image img {
-    max-width: 600px;
-  }
-
-  .our-services .steps {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-footer {
-  background-color: var(--third-color);
-  color: #fff;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 0.9rem;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-.footer-links {
-  margin-top: 15px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.consultants-section {
-  padding: 80px 0;
-  background-color: var(--background-color);
-}
-
-.consultants-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.consultants-section h2 {
-  color: var(--primary-color);
-  margin-bottom: 40px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.consultants {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  text-align: center;
-}
-
-.consultant {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  text-align: center;
-}
-
-.consultant-photo {
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.consultant-photo img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
-.consultant h3 {
-  margin-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-  .consultants {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.about-section {
-  padding: 80px 20px;
-  background-color: var(--background-color);
-  text-align: center;
-}
-
-.about-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 40px;
-}
-
-.about-highlight {
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-  color: var(--text-color);
-  letter-spacing: 0.5px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.about-highlight strong {
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-.about-highlight p {
-  margin-bottom: 30px;
-}
-
-.outcome {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-}
-
-.outcome p {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.outcome strong {
-  color: var(--accent-color);
-}
-
-.cta-section {
-  background-color: var(--primary-color);
-  color: #fff;
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.cta-section h2 {
-  margin-bottom: 20px;
-}
-
-.cta-section p {
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  padding: 15px 30px;
-  background-color: var(--accent-color);
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #fff;
-  color: var(--accent-color);
-}
-
-
-  </style>
-</head>
-
-<body>
-
-<section class="brand-section">
-  <div class="container centered-section">
-    <img src="ysimplicity_original.png" alt="whysimplicity logo" class="logo">
-    <p>whysimplicity helps transform your tech team into a strategic asset, delivering fast, impactful results.</p>
-    <a href="https://calendly.com/contato-ytech/30min" class="cta-button-outline">Talk to an Expert</a>
-  </div>
-</section>
-
-<section class="about-section">
-  <div class="container">
-    <h2 class="about-title">Is your tech holding you back?</h2>
-
-    <div class="about-highlight">
-      <p>
-        Is your tech team failing to deliver <strong>fast results</strong>?
-      </p>
-      <p>
-        Is there a lack of clarity in how to <strong>mentor</strong> and grow junior and mid-level developers into more advanced roles?
-      </p>
-      <p>
-        Is your <strong>codebase</strong> becoming harder to maintain as your team grows?
-      </p>
-      <p>
-        Is the time it takes to <strong>resolve bugs</strong> acceptable, or is it slowing down your development process and impacting <strong>business outcomes</strong>?
-      </p>
-      <p>
-        If any of this resonates, your business could be facing <strong>inefficiencies</strong> that are holding you back from growth. We can help.
-      </p>
-    </div>
-  </div>
-</section>
-
-  <section class="consultants-section">
-    <div class="container">
-      <h2>Who we are</h2>
-      <div class="consultants">
-        <div class="consultant">
-          <div class="consultant-photo">
-            <img src="ralf.jpg" alt="Rodrigo Picture">
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="stack stack--s4">
+
+    <section class="container mx-auto px-4 pt-12">
+      <div class="cluster justify-between">
+        <img src="logo-whysimplicity.png" alt="whysimplicity logo" style="max-width: min(32ch, 100%);">
+        <h1 class="text-2xl text-black">Because grow can be simple.</h1>
+      </div>
+    </section>
+
+    <section class="bg-black text-white">
+      <div class="container mx-auto px-4 py-16 stack stack--s2">
+
+        <h2 class="font-bold text-3xl">Is your Rails development team facing these challenges?</h2>
+
+        <ul class="list-disc list-inside stack stack--s-2">
+          <li>
+            Aging codebases that are hard to maintain and extend
+          </li>
+          <li>
+            Difficulty onboarding new developers
+          </li>
+          <li>
+            Struggling to meet customer demands
+          </li>
+          <li>
+            Outdated Rails and Ruby versions
+          </li>
+          <li>
+            Slow deployments and CI/CD pipelines
+          </li>
+          <li>
+            High costs and limited scalability of your PaaS
+          </li>
+        </ul>
+
+        <a href="https://calendly.com/mrbongiolo-hey/whysimplicity" class="self-start text-white text-xl px-6 py-3 font-semibold rounded-md shadow-sm opacity-100 bg-whyred hover:bg-white hover:text-whyred" target="_blank">Get in touch!</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto px-4 stack stack--s2">
+        <h2 class="font-bold text-4xl text-black text-center self-center">How we work</h2>
+
+        <div class="grid gap-12">
+          <div class="stack items-center text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle text-whyred"><circle cx="12" cy="12" r="10"></circle></svg>
+            <h3 class="font-bold">Comprehensive Diagnosis</h3>
+            <p>We conduct a thorough assessment of your team and technical infrastructure, pinpointing areas ripe for improvement.</p>
           </div>
-          <h3>Rodrigo Serradura</h3>
-          <p>Rodrigo Serradura is a senior engineer with over 12 years of experience. Creator of gems like u-case and kind, he is active in the Ruby community and founder of the ada.rb group. He also teaches courses and lectures on Ruby and Rails.</p>
-        </div>
-        <div class="consultant">
-          <div class="consultant-photo">
-            <img src="ralf.jpg" alt="Wedson Picture">
+          <div class="stack items-center text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-square text-whyred"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+            <h3 class="font-bold">Tailored Training and Mentorship</h3>
+            <p>Empower your developers through customized training programs and hands-on mentoring, designed to address your specific needs.</p>
           </div>
-          <h3>Wedson Lima</h3>
-          <p>Specialist engineer in Ruby on Rails with over 18 years of experience working with web development in teams of various sizes. Founder and tech director of the educational companies FB Online and TechDojo.</p>
-        </div>
-        <div class="consultant">
-          <div class="consultant-photo">
-            <img src="ralf.jpg" alt="Ralf Picture">
+          <div class="stack items-center text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-triangle text-whyred"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
+            <h3 class="font-bold">Collaborative Implementation</h3>
+            <p>We work side-by-side with your team, ensuring seamless application of improvements and best practices.</p>
           </div>
-          <h3>Ralf Schmitz Bongiolo</h3>
-          <p>A seasoned Ruby on Rails developer with over 15 years of experience, with a keen eye for design and a deep understanding of the web ecosystem and fintech markets. Was the first employee and CTO at Yubb.</p>
-        </div>
-        <div class="consultant">
-          <div class="consultant-photo">
-            <img src="ralf.jpg" alt="Luiz Picture">
+          <div class="stack items-center text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hexagon text-whyred"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            <h3 class="font-bold">Optimization and Scalability</h3>
+            <p>Future-proof your Rails application, making it ready to scale securely and efficiently.</p>
           </div>
-          <h3>Luiz Vasconcellos</h3>
-          <p>12 years of experience in web development using various technologies.</p>
-        </div>
-        <div class="consultant">
-          <div class="consultant-photo">
-            <img src="ralf.jpg" alt="Diego Picture">
-          </div>
-          <h3>Diego Linhares</h3>
-          <p>Ruby on Rails developer with over 6 years of experience. Passionate about software architecture and engineering.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="our-services">
-      <div class="container">
-          <h2>How we help</h2>
-          <div class="steps">
-              <div class="step">
-                  <i data-feather="search"></i>
-                  <div>
-                      <h3>Team & Process Analysis</h3>
-                      <p>We’ll conduct a thorough analysis of your team and processes to identify the core issues.</p>
-                  </div>
-              </div>
-              <div class="step">
-                  <i data-feather="layout"></i>
-                  <div>
-                      <h3>Tailored Strategy</h3>
-                      <p>We’ll implement a tailored strategy that fits your company’s unique culture and needs.</p>
-                  </div>
-              </div>
-              <div class="step">
-                  <i data-feather="trending-up"></i>
-                  <div>
-                      <h3>Leadership & Team Coaching</h3>
-                      <p>Through ongoing coaching and hands-on leadership development, we’ll empower your team to work efficiently and in sync with your business goals.</p>
-                  </div>
-              </div>
+    <section class="container mx-auto stack">
+      <div class="container mx-auto px-4 stack stack--s2">
+        <h2 class="font-bold text-3xl text-black text-center self-center">Who we are</h2>
+
+        <div class="grid gap-12">
+          <div class="stack items-center text-center">
+            <!-- <img src="ralf.jpg" alt="Rodrigo's picture", class="max-w-32 rounded-full ring-2 ring-offset-4 ring-whyred"> -->
+            <h3 class="font-bold ">Rodrigo Serradura</h3>
+            <p>Rodrigo Serradura is a senior engineer with over 12 years of experience. Creator of gems like u-case and kind, he is active in the Ruby community and founder of the ada.rb group. He also teaches courses and lectures on Ruby and Rails.</p>
           </div>
-      </div>
+          <div class="stack items-center text-center">
+            <!-- <img src="ralf.jpg" alt="Wedson's picture", class="max-w-32 rounded-full ring-2 ring-offset-4 ring-whyred"> -->
+            <h3 class="font-bold ">Wedson Lima</h3>
+            <p>Specialist engineer in Ruby on Rails with over 18 years of experience working with web development in teams of various sizes. Founder and tech director of the educational companies FB Online and TechDojo.</p>
+          </div>
+          <div class="stack items-center text-center">
+            <!-- <img src="ralf.jpg" alt="Ralf's picture", class="max-w-32 rounded-full ring-2 ring-offset-4 ring-whyred"> -->
+            <h3 class="font-bold ">Ralf Schmitz Bongiolo</h3>
+            <p>With over 15 years of experience, has a keen eye for design and a deep understanding of fintech markets. Was the first employee and CTO at Yubb.</p>
+          </div>
+          <div class="stack items-center text-center">
+            <!-- <img src="ralf.jpg" alt="Luiz's picture", class="max-w-32 rounded-full ring-2 ring-offset-4 ring-whyred"> -->
+            <h3 class="font-bold ">Luiz Vasconcellos</h3>
+            <p>12 years of experience in web development using various technologies.</p>
+          </div>
+          <div class="stack items-center text-center">
+            <!-- <img src="ralf.jpg" alt="Diego's picture", class="max-w-32 rounded-full ring-2 ring-offset-4 ring-whyred"> -->
+            <h3 class="font-bold ">Diego Linhares</h3>
+            <p>Ruby on Rails developer with over 6 years of experience. Passionate about software architecture and engineering.</p>
+          </div>
+        </div>
 
-      <div class="outcome">
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <div class="container mx-auto px-4 py-16 stack stack--s2">
+        <h2 class="font-bold text-2xl text-center text-black self-center">Trusted by</h2>
+
+        <div class="grid gap-16">
+          <div class="stack text-center">
+            <div class="flex items-center justify-center min-h-28">
+              <img src="fbonline.png" alt="FB Online Logo" class="max-w-28 grayscale">
+            </div>
+            <h3 class="font-bold">FB Online</h3>
+            <p>An educational platform offering online courses for ENEM, Medicine, ITA, and IME.</p>
+          </div>
+          <div class="stack text-center">
+            <div class="flex items-center justify-center min-h-28">
+              <img src="yubb.png" alt="Yubb Logo" class="max-w-28 grayscale">
+            </div>
+            <h3 class="font-bold">Yubb</h3>
+            <p>Yubb is a free, transparent, and impartial investment search engine to help you find the best investments in Brazil.</p>
+          </div>
+          <div class="stack text-center">
+            <div class="flex items-center justify-center min-h-28">
+              <img src="techdojo.png" alt="TechDojo Logo" class="max-w-28 grayscale">
+            </div>
+            <h3 class="font-bold">TechDojo</h3>
+            <p>A gamified educational platform for teaching web programming with various collaboration tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black text-white m-0">
+      <div class="container mx-auto px-4 py-24 stack items-center text-center">
+        <h2 class="font-bold text-3xl">Let's accelerate your growth</h2>
         <p>
-            <strong>Your tech team will transform into a strategic asset, delivering fast, impactful results.</strong>
-            You’ll experience smoother communication, faster project turnarounds, and your business growth.
-            The frustration will turn into clarity and success.
+          Reach out to us and start seeing faster results and a smoother development process.
         </p>
-    </div>
-  </section>
-
-  <section class="projects-section">
-    <div class="container">
-      <h2>Trusted by</h2>
-      <div class="projects">
-        <div class="project">
-          <div class="project-logo">
-            <img src="fbonline.png" alt="FB Online Logo">
-          </div>
-          <h3>FB Online</h3>
-          <p>An educational platform offering online courses for ENEM, Medicine, ITA, and IME.</p>
-        </div>
-        <div class="project">
-          <div class="project-logo">
-            <img src="yubb.png" alt="Yubb Logo">
-          </div>
-          <h3>Yubb</h3>
-          <p>Yubb is a free, transparent, and impartial investment search engine to help you find the best investments in Brazil.</p>
-        </div>
-        <div class="project">
-          <div class="project-logo">
-            <img src="techdojo.png" alt="TechDojo Logo" style="height: 90px; width: auto;">
-          </div>
-          <h3>TechDojo</h3>
-          <p>A gamified educational platform for teaching web programming with various collaboration tools.</p>
-        </div>
+        <a href="https://calendly.com/mrbongiolo-hey/whysimplicity" class="text-xl px-6 py-3 font-semibold rounded-md shadow-sm opacity-100 bg-whyred hover:bg-white hover:text-whyred" target="_blank">Book a free consultation</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cta-section">
-    <div class="container">
-      <h2>Let's accelerate your growth</h2>
-      <p>
-        Reach out to us and start seeing faster results and a smoother development process.
-      </p>
-      <a href="https://calendly.com/contato-ytech/30min" class="cta-button">Book a Free Consultation</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 whysimplicity - All rights reserved.</p>
-      <p>because growth can be simple.</p>
-      <div class="footer-links">
-        <a href="https://calendly.com/contato-ytech/30min" target="_blank">Contact us</a>
-        <a href="https://www.linkedin.com/company/ysimplicity" target="_blank">LinkedIn</a>
-        <a href="/blog" target="_blank">Blog</a>
+    <footer class="bg-zinc-500 text-white m-0">
+      <div class="container mx-auto px-4 py-8 stack items-center">
+        <p>&copy; 2024 whysimplicity - All rights reserved.</p>
+        <!-- <div class="cluster"> -->
+        <!--   <a href="https://calendly.com/mrbongiolo-hey/whysimplicity" target="_blank" class="font-bold hover:underline">Contact us</a> -->
+        <!--   <a href="https://www.linkedin.com/company/whysimplicity" target="_blank" class="font-bold hover:underline">LinkedIn</a> -->
+        <!--   <a href="/blog" target="_blank">Blog</a> -->
+        <!-- </div> -->
       </div>
-    </div>
-  </footer>
-
-  <script>
-    feather.replace()
-  </script>
-</body>
-
+    </footer>
+  </body>
 </html>

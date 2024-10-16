@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  :root {
+    --ratio: 1.5;
+
+    --measure: 60ch;
+
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+
+    --s5: calc(var(--s4) * var(--ratio));
+
+    --accent-color: #E21E1E;
+    --background-color: #ffffff;
+    --text-color: #333333;
+  }
+
+  * {
+    max-inline-size: var(--measure);
+  }
+
+  html,
+  body,
+  div,
+  header,
+  nav,
+  main,
+  footer,
+  section {
+    max-inline-size: none;
+  }
+
+  html {
+    font-family: "Poppins", system-ui, sans-serif;
+  }
+
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.8;
+    font-size: 1.125rem;
+  }
+
+  /* PRIMITIVE - Stack */
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .stack > * {
+    margin-block: 0;
+  } 
+
+  .stack > * + * {
+    margin-block-start: var(--s0);
+  }
+
+  .stack--s-2 > * + * { margin-block-start: var(--s-2) }
+  .stack--s-1 > * + * { margin-block-start: var(--s-1) }
+  .stack--s2 > * + * { margin-block-start: var(--s2) }
+  .stack--s3 > * + * { margin-block-start: var(--s3) }
+  .stack--s4 > * + * { margin-block-start: var(--s4) }
+
+  /* PRIMITIVE - Grid */
+
+  .grid {
+    display: grid;
+    grid-gap: var(--s0);
+  }
+
+  @supports (width: min(250px, 100%)) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+  }
+
+  /* PRIMITIVE - Cluster */
+
+  .cluster {
+    --y-cluster-gap: var(--s0);
+    --y-cluster-justify-content: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--y-cluster-gap);
+    justify-content: var(--y-cluster-justify-content);
+    align-items: center;
+  }
+}
+
+@tailwind utilities;
