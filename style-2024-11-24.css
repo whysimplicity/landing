@@ -800,8 +800,8 @@ body {
   background-color: rgb(113 113 122 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(serradura-cadeira\.png\)\] {
-  background-image: url(serradura-cadeira.png);
+.bg-\[url\(serradura-cadeira\.webp\)\] {
+  background-image: url(serradura-cadeira.webp);
 }
 
 .bg-contain {
@@ -931,8 +931,4 @@ body {
 .hover\:text-whyred:hover {
   --tw-text-opacity: 1;
   color: rgb(226 30 30 / var(--tw-text-opacity));
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
 }
